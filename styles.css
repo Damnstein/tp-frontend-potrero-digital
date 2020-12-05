@@ -1,0 +1,225 @@
+
+body {
+    background-color: #f5abc7;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    background-color: #55147a;
+}
+.logo{
+    margin-left: 5%;
+    height: 90%;
+}
+header > div{
+    font-family: 'Lobster', cursive;
+    color: #fddc76;
+}
+header > div > h1{
+    font-size: 4rem;
+}
+header > div > h5{
+    letter-spacing: 8px;
+}
+header nav {
+    margin-right: 5%;
+}
+header ul{
+    margin-bottom: 0;
+}
+header li {
+    font-size: 1.3em;
+    font-weight: bold;
+    list-style: none;
+    text-align: end;
+}
+header li a {
+    color: #f5abc7;
+    padding:5px;
+}
+header li a:hover {
+    color: #55147a;
+    text-decoration: none;
+    background-color: #f5abc7;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.main-content {
+    margin-top: 150px;
+}
+.artesanal-card {
+    display: flex;
+}
+.artesanal-card-content {
+    margin: 3rem;
+}
+.artesanal-card-content-special {
+    display: flex;    
+}
+.artesanal-card-titulo {
+    margin-bottom: 2rem;
+}
+.artesanal-card-img {
+    width: 35%;
+    object-fit: contain;
+}
+.artesanal-img-special {
+    width: 100%;
+}
+.text-queremos {
+    margin: 3rem;
+}
+.catalogo-card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+.catalogo-card{
+    min-width: 25%;
+    border-radius: 10px;
+    background-color:  #fddc76;
+}
+.catalogo-card-body {
+    padding: 1rem;
+    margin: 1rem;
+}
+footer{
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #55147a;
+    color: #f5abc7;
+}
+.footer-marca{
+    font-family: 'Lobster', cursive;
+    color: #fddc76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-marca img{
+    width: 10rem;
+    height: 10rem;
+}
+#redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#redes p{
+    margin:0;
+}
+#redes img {
+    width: 40px;
+    margin: .5em;
+}
+#envios{
+    padding: 10px 0;
+}
+footer iframe {
+    width: 90%;
+    height: 200px;
+}
+
+@media screen and (max-width: 768px){
+        
+    header > div > h1{
+        font-size: 2rem;
+    }
+    header > div > h5{
+        letter-spacing: 6px;
+    }
+    header .marca {
+        margin-left: 1rem;
+    }
+    header li {
+        font-size: 1.2em;
+    }
+    .main-content {
+        margin-top: 150px;
+    }
+    .artesanal-card {
+        display: flex;
+    }
+    .artesanal-card-content {
+        margin: 3rem;
+    }
+    .artesanal-card-content-special {
+        display: flex;    
+    }
+    .artesanal-card-titulo {
+        margin-bottom: 2rem;
+    }
+    .artesanal-card-img {
+        width: 35%;
+        object-fit: contain;
+    }
+    .text-queremos {
+        margin: 3rem;
+    }
+    .catalogo-card-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+    .catalogo-card{
+        min-width: 25%;
+        border-radius: 10px;
+        background-color:  #fddc76;
+    }
+    .catalogo-card-body {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    footer{
+        text-align: center;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #55147a;
+        color: #f5abc7;
+    }
+    .footer-marca{
+        font-family: 'Lobster', cursive;
+        color: #fddc76;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-marca img{
+        width: 10rem;
+        height: 10rem;
+    }
+    #redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #redes p{
+        margin:0;
+    }
+    #redes img {
+        width: 40px;
+        margin: .5em;
+    }
+    #envios{
+        padding: 10px 0;
+    }
+    footer iframe {
+        width: 90%;
+        height: 200px;
+    }
+
+}
